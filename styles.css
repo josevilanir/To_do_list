@@ -46,20 +46,28 @@ button:hover {
 
 .week-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que os elementos fiquem lado a lado e quebrem linha se necessário */
     justify-content: center; /* Centraliza os elementos horizontalmente */
     gap: 20px;
+    flex-wrap: wrap; /* Mantém os elementos em várias linhas, se necessário */
     margin-top: 20px;
+    align-items: flex-start; /* Garante que os quadrados fiquem alinhados ao topo */
 }
 
 .day {
-    width: 250px; /* Mantém o tamanho das caixas */
+    flex: 0 0 auto; /* Cada quadrado se ajusta ao conteúdo sem influenciar os outros */
+    width: auto; /* Ajusta a largura automaticamente conforme o conteúdo */
+    min-width: 250px; /* Define um tamanho mínimo para evitar quadrados muito pequenos */
     padding: 15px;
     background-color: rgba(255, 235, 59, 1); /* Amarelo padrão */
     border-radius: 10px;
-    transition: background-color 0.5s ease;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative;
+    overflow: hidden; /* Garante que o preenchimento não ultrapasse os limites do bloco */
+    background: linear-gradient(to bottom, green 0%, green 0%, yellow 0%, yellow 100%);
+    background-size: 100% 100%; /* Garante que o gradiente cubra todo o bloco */
+    background-repeat: no-repeat;
+    transition: background-size 1.5s ease-in-out, background-color 1.5s ease-in-out;
 }
 
 .day h3 {
@@ -123,4 +131,29 @@ button:hover {
 
 .remove-button i {
     font-size: 16px; /* Tamanho do ícone */
+}
+
+.day .task-input {
+    width: 75%; /* O campo ocupa toda a largura do bloco */
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.day button {
+    width: 15%; /* O botão ocupa toda a largura do bloco */
+    padding: 8px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.day button:hover {
+    background-color: #1976D2;
 }

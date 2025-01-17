@@ -11,55 +11,54 @@
 
     <h1>Gerenciador de Tarefas Semanais</h1>
 
-    <!-- Formulário para adicionar tarefa a múltiplos dias -->
-    <div class="task-multiple">
-        <input type="text" id="task-input-multiple" placeholder="Digite a tarefa">
-        <div class="day-checkboxes">
-            <label><input type="checkbox" class="day-checkbox" value="monday"> Segunda</label>
-            <label><input type="checkbox" class="day-checkbox" value="tuesday"> Terça</label>
-            <label><input type="checkbox" class="day-checkbox" value="wednesday"> Quarta</label>
-            <label><input type="checkbox" class="day-checkbox" value="thursday"> Quinta</label>
-            <label><input type="checkbox" class="day-checkbox" value="friday"> Sexta</label>
-            <label><input type="checkbox" class="day-checkbox" value="saturday"> Sábado</label>
-            <label><input type="checkbox" class="day-checkbox" value="sunday"> Domingo</label>
-        </div>
-        <button onclick="addTaskToMultipleDays()">Adicionar Tarefa</button>
-    </div>
-
     <!-- Container para os dias da semana -->
     <div class="week-container">
         <div id="monday" class="day">
             <h3>Segunda</h3>
+            <input type="text" class="task-input" placeholder="Adicionar tarefa">
+            <button onclick="addTaskToDay('monday')">+</button>
             <ul class="task-list"></ul>
             <div class="progress"></div>
         </div>
         <div id="tuesday" class="day">
             <h3>Terça</h3>
+            <input type="text" class="task-input" placeholder="Adicionar tarefa">
+            <button onclick="addTaskToDay('tuesday')">+</button>
             <ul class="task-list"></ul>
             <div class="progress"></div>
         </div>
         <div id="wednesday" class="day">
             <h3>Quarta</h3>
+            <input type="text" class="task-input" placeholder="Adicionar tarefa">
+            <button onclick="addTaskToDay('wednesday')">+</button>
             <ul class="task-list"></ul>
             <div class="progress"></div>
         </div>
         <div id="thursday" class="day">
             <h3>Quinta</h3>
+            <input type="text" class="task-input" placeholder="Adicionar tarefa">
+            <button onclick="addTaskToDay('thursday')">+</button>
             <ul class="task-list"></ul>
             <div class="progress"></div>
         </div>
         <div id="friday" class="day">
             <h3>Sexta</h3>
+            <input type="text" class="task-input" placeholder="Adicionar tarefa">
+            <button onclick="addTaskToDay('friday')">+</button>
             <ul class="task-list"></ul>
             <div class="progress"></div>
         </div>
         <div id="saturday" class="day">
             <h3>Sábado</h3>
+            <input type="text" class="task-input" placeholder="Adicionar tarefa">
+            <button onclick="addTaskToDay('saturday')">+</button>
             <ul class="task-list"></ul>
             <div class="progress"></div>
         </div>
         <div id="sunday" class="day">
             <h3>Domingo</h3>
+            <input type="text" class="task-input" placeholder="Adicionar tarefa">
+            <button onclick="addTaskToDay('sunday')">+</button>
             <ul class="task-list"></ul>
             <div class="progress"></div>
         </div>
