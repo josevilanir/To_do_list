@@ -35,8 +35,10 @@ function updateProgress(dayId) {
     const progressPercentage = (completedTasks / taskCount) * 100;
 
     // Atualiza o fundo com gradiente
-    dayElement.style.background = `linear-gradient(to bottom, green ${progressPercentage}%, yellow ${progressPercentage}%, yellow 100%)`;
+    dayElement.style.background = `linear-gradient(to top, green ${progressPercentage}%, yellow ${progressPercentage}%, yellow 100%)`;
 }
+
+
 
 // Salva todas as tarefas no Local Storage
 function saveAllTasks() {

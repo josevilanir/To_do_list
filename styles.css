@@ -64,7 +64,7 @@ button:hover {
     text-align: center;
     position: relative;
     overflow: hidden; /* Garante que o preenchimento não ultrapasse os limites do bloco */
-    background: linear-gradient(to bottom, green 0%, green 0%, yellow 0%, yellow 100%);
+    background: linear-gradient(to top, green 0%, green 0%, yellow 0%, yellow 100%);
     background-size: 100% 100%; /* Garante que o gradiente cubra todo o bloco */
     background-repeat: no-repeat;
     transition: background-size 1.5s ease-in-out, background-color 1.5s ease-in-out;
@@ -118,7 +118,7 @@ button:hover {
 
 /* Cores da transição */
 .day.completed {
-    background-color: #4CAF50 !important; /* Verde quando o progresso estiver completo */
+    background-color: #4CAF50 ; /* Verde quando o progresso estiver completo */
 }
 
 .remove-button {
